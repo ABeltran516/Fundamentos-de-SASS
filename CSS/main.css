@@ -4,7 +4,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   font-family: "IBM Plex Sans", sans-serif;
@@ -64,6 +65,72 @@ article button {
 article img {
   width: 25vw;
   border-radius: 19px;
+}
+
+section {
+  width: auto;
+  height: auto;
+  padding: 6rem;
+}
+section h2 {
+  color: #7C6A0A;
+  font-size: 2.5rem;
+}
+section .Healthcare, section .Furniture {
+  padding-bottom: 6rem;
+}
+section .Healthcare h2, section .Furniture h2 {
+  padding-bottom: 6rem;
+  font-weight: 300;
+}
+section .Healthcare .Card-section, section .Furniture .Card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 20rem;
+       column-gap: 20rem;
+  row-gap: 8rem;
+  width: auto;
+  height: auto;
+}
+section .Healthcare .Product-card, section .Furniture .Product-card {
+  width: 14vw;
+  height: 45vh;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #FFDAC6;
+}
+section .Healthcare .Product-card .Icon, section .Furniture .Product-card .Icon {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+section .Healthcare .Product-card .Icon svg, section .Furniture .Product-card .Icon svg {
+  width: 28px;
+  height: 28px;
+}
+section .Healthcare .Product-card .Product-image, section .Furniture .Product-card .Product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+section .Healthcare .Product-card .Product-image img, section .Furniture .Product-card .Product-image img {
+  width: 12vw;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+section .Furniture {
+  /* Esto extiende todos los estilos de Healthcare */
+}
+section .Furniture .Product-card {
+  background-color: #BABD8D;
+  color: white;
 }
 
 footer {
